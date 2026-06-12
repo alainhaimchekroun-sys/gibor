@@ -57,7 +57,7 @@ export function HomeSections() {
               Préserver la mémoire des lignées oubliées
             </h2>
             <p className="text-lg text-foreground/80 leading-relaxed text-pretty">
-              Le Gibor Institute a pour objet de rechercher, préserver et éduquer le public sur les lignées
+              Le Shealtiel Heritage a pour objet de rechercher, préserver et éduquer le public sur les lignées
               historiques méconnues de la Méditerranée, en mettant l{"'"}accent sur des figures comme Dona Gracia Nasi,
               les réseaux séfarades et la transmission des mémoires juives et davidiques, par des expositions,
               podcasts, archives et ressources pédagogiques.

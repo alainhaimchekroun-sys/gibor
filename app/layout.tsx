@@ -10,17 +10,17 @@ const _cormorant = Cormorant_Garamond({
   weight: ["300", "400", "500", "600", "700"]
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://gibor-institute.vercel.app'
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://shealtiel-heritage.vercel.app'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Gibor Institute | Mémoire des lignées historiques de la Méditerranée',
-    template: '%s | Gibor Institute'
+    default: 'Shealtiel Heritage | Mémoire des lignées historiques de la Méditerranée',
+    template: '%s | Shealtiel Heritage'
   },
-  description: 'Le Gibor Institute, association loi 1901, recherche, préserve et transmet la mémoire des lignées historiques méconnues de la Méditerranée : Dona Gracia Nasi, les réseaux séfarades et les mémoires juives et davidiques, par des expositions, podcasts, archives et ressources pédagogiques.',
+  description: 'Shealtiel Heritage, association loi 1901, recherche, préserve et transmet la mémoire des lignées historiques méconnues de la Méditerranée : Dona Gracia Nasi, les réseaux séfarades et les mémoires juives et davidiques, par des expositions, podcasts, archives et ressources pédagogiques.',
   keywords: [
-    'Gibor Institute',
+    'Shealtiel Heritage',
     'Dona Gracia Nasi',
     'histoire séfarade',
     'mémoire juive',
@@ -33,11 +33,11 @@ export const metadata: Metadata = {
     'archives historiques',
     'transmission mémoire'
   ],
-  authors: [{ name: 'Gibor Institute', url: siteUrl }],
-  creator: 'Gibor Institute',
-  publisher: 'Gibor Institute',
+  authors: [{ name: 'Shealtiel Heritage', url: siteUrl }],
+  creator: 'Shealtiel Heritage',
+  publisher: 'Shealtiel Heritage',
   generator: 'v0.app',
-  applicationName: 'Gibor Institute',
+  applicationName: 'Shealtiel Heritage',
   referrer: 'origin-when-cross-origin',
   formatDetection: {
     email: false,
@@ -48,22 +48,22 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'fr_FR',
     url: siteUrl,
-    siteName: 'Gibor Institute',
-    title: 'Gibor Institute | Mémoire des lignées historiques de la Méditerranée',
+    siteName: 'Shealtiel Heritage',
+    title: 'Shealtiel Heritage | Mémoire des lignées historiques de la Méditerranée',
     description: 'Rechercher, préserver et transmettre la mémoire des lignées historiques méconnues de la Méditerranée, autour de Dona Gracia Nasi et des réseaux séfarades.',
     images: [
       {
         url: '/images/lion-water.jpg',
         width: 1200,
         height: 630,
-        alt: 'Gibor Institute - Lion doré, symbole de la lignée davidique',
+        alt: 'Shealtiel Heritage - Lion doré, symbole de la lignée davidique',
         type: 'image/jpeg',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Gibor Institute | Mémoire des lignées de la Méditerranée',
+    title: 'Shealtiel Heritage | Mémoire des lignées de la Méditerranée',
     description: 'Association loi 1901 dédiée à la recherche, la préservation et la transmission des mémoires séfarades et davidiques.',
     images: ['/images/lion-water.jpg'],
   },
@@ -123,7 +123,7 @@ const jsonLd = {
     {
       '@type': 'NGO',
       '@id': `${siteUrl}/#organization`,
-      name: 'Gibor Institute',
+      name: 'Shealtiel Heritage',
       url: siteUrl,
       description: 'Association loi 1901 dédiée à la recherche, la préservation et la transmission des mémoires des lignées historiques méconnues de la Méditerranée, autour de Dona Gracia Nasi et des réseaux séfarades.',
       logo: `${siteUrl}/images/logo-gibor.jpg`,
@@ -134,8 +134,8 @@ const jsonLd = {
       '@type': 'WebSite',
       '@id': `${siteUrl}/#website`,
       url: siteUrl,
-      name: 'Gibor Institute',
-      description: 'Site officiel du Gibor Institute',
+      name: 'Shealtiel Heritage',
+      description: 'Site officiel de Shealtiel Heritage',
       publisher: {
         '@id': `${siteUrl}/#organization`
       },
@@ -145,7 +145,7 @@ const jsonLd = {
       '@type': 'PodcastSeries',
       '@id': `${siteUrl}/#podcast`,
       name: 'Gibor, le podcast',
-      description: "La voix éducative officielle du Gibor Institute.",
+      description: "La voix éducative officielle de Shealtiel Heritage.",
       url: `${siteUrl}/podcast`,
       author: {
         '@id': `${siteUrl}/#organization`

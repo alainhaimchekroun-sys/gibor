@@ -8,7 +8,7 @@ import { INSTITUTE, BUREAU, CONSEIL } from "@/lib/institute"
 export const metadata: Metadata = {
   title: "L'Institut",
   description:
-    "Découvrez la mission, le bureau et le conseil d'administration du Gibor Institute, association loi 1901 dédiée à la mémoire des lignées historiques de la Méditerranée.",
+    "Découvrez la mission, le bureau et le conseil d'administration de Shealtiel Heritage, association loi 1901 dédiée à la mémoire des lignées historiques de la Méditerranée.",
 }
 
 const VALUES = [
@@ -36,7 +36,7 @@ export default function InstitutPage() {
       <PageHeader
         eyebrow="Association loi 1901"
         title="L'Institut"
-        description="Le Gibor Institute œuvre pour la recherche, la préservation et la transmission des mémoires des lignées historiques méconnues de la Méditerranée."
+        description="Shealtiel Heritage œuvre pour la recherche, la préservation et la transmission des mémoires des lignées historiques méconnues de la Méditerranée."
       />
 
       {/* Mission / Vision / Moyens */}

@@ -9,7 +9,7 @@ import { BookOpen, ShoppingCart, GraduationCap } from "lucide-react"
 export const metadata: Metadata = {
   title: "Le livre GIBOR",
   description:
-    "GIBOR - Les Héros du Temps, roman historique d'Alain Henri Chekroun, utilisé par le Gibor Institute comme outil éducatif de transmission des mémoires de la Méditerranée.",
+    "GIBOR - Les Héros du Temps, roman historique d'Alain Henri Chekroun, utilisé par Shealtiel Heritage comme outil éducatif de transmission des mémoires de la Méditerranée.",
 }
 
 export default function LivrePage() {

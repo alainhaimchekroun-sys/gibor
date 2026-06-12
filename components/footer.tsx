@@ -28,14 +28,14 @@ export function Footer() {
           <div className="mb-6">
             <Image
               src="/images/logo-gibor.jpg"
-              alt="Gibor Institute"
+              alt="Shealtiel Heritage"
               width={80}
               height={80}
               className="mx-auto rounded-full shadow-lg ring-2 ring-primary/30"
             />
           </div>
 
-          <h3 className="text-3xl md:text-4xl font-bold mb-2 tracking-wide">Gibor Institute</h3>
+          <h3 className="text-3xl md:text-4xl font-bold mb-2 tracking-wide">Shealtiel Heritage</h3>
           <p className="text-primary font-medium mb-8 max-w-2xl mx-auto text-pretty">
             Rechercher, préserver et transmettre la mémoire des lignées historiques méconnues de la Méditerranée
           </p>
@@ -68,7 +68,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-full bg-secondary-foreground/10 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all group"
-                aria-label="Facebook - Gibor Institute"
+                aria-label="Facebook - Shealtiel Heritage"
               >
                 <Facebook className="w-5 h-5 text-secondary-foreground/70 group-hover:text-white" />
               </a>
@@ -77,7 +77,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-full bg-secondary-foreground/10 flex items-center justify-center hover:bg-blue-700 hover:text-white transition-all group"
-                aria-label="LinkedIn - Gibor Institute"
+                aria-label="LinkedIn - Shealtiel Heritage"
               >
                 <Linkedin className="w-5 h-5 text-secondary-foreground/70 group-hover:text-white" />
               </a>
@@ -86,7 +86,7 @@ export function Footer() {
 
           <div className="pt-8 border-t border-secondary-foreground/10">
             <p className="text-secondary-foreground/50 text-sm">
-              © {new Date().getFullYear()} Gibor Institute — Association loi 1901. Tous droits réservés.
+              © {new Date().getFullYear()} Shealtiel Heritage — Association loi 1901. Tous droits réservés.
             </p>
           </div>
         </div>

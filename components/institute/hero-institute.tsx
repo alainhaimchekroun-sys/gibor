@@ -22,7 +22,7 @@ export function HeroInstitute() {
           <div className="mb-8 flex justify-center">
             <Image
               src="/images/logo-gibor.jpg"
-              alt="Gibor Institute"
+              alt="Shealtiel Heritage"
               width={96}
               height={96}
               className="rounded-full shadow-2xl ring-2 ring-primary/40"
@@ -34,7 +34,7 @@ export function HeroInstitute() {
           </p>
 
           <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-wide text-balance">
-            Gibor Institute
+            Shealtiel Heritage
           </h1>
 
           <div className="w-24 h-1 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto mb-8" />

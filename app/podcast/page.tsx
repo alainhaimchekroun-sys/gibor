@@ -8,7 +8,7 @@ import { EPISODES, PODCAST_YOUTUBE } from "@/lib/institute"
 export const metadata: Metadata = {
   title: "Podcast",
   description:
-    "Gibor, le podcast — la voix éducative officielle du Gibor Institute. Découvrez les 8 épisodes consacrés aux mémoires séfarades et davidiques de la Méditerranée.",
+    "Gibor, le podcast — la voix éducative officielle de Shealtiel Heritage. Découvrez les 8 épisodes consacrés aux mémoires séfarades et davidiques de la Méditerranée.",
 }
 
 export default function PodcastPage() {

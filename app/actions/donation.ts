@@ -29,10 +29,10 @@ export async function startSupportSession({ amountInCents, label, mode }: Suppor
         price_data: {
           currency: 'eur',
           product_data: {
-            name: isAdhesion ? `Adhésion ${label}` : 'Don à Gibor Institute',
+            name: isAdhesion ? `Adhésion ${label}` : 'Don à Shealtiel Heritage',
             description: isAdhesion
-              ? `Adhésion annuelle "${label}" au Gibor Institute (association loi 1901)`
-              : 'Don de soutien au Gibor Institute (association loi 1901)',
+              ? `Adhésion annuelle "${label}" à Shealtiel Heritage (association loi 1901)`
+              : 'Don de soutien à Shealtiel Heritage (association loi 1901)',
           },
           unit_amount: amount,
         },

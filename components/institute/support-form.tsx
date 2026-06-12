@@ -189,7 +189,7 @@ function CheckoutModal({ session, onClose }: { session: ActiveSession; onClose: 
         <div className="flex items-center justify-between p-5 border-b border-border sticky top-0 bg-card rounded-t-2xl">
           <div>
             <h3 className="font-bold text-foreground">
-              {session.mode === 'adhesion' ? `Adhésion ${session.label}` : 'Don à Gibor Institute'}
+              {session.mode === 'adhesion' ? `Adhésion ${session.label}` : 'Don à Shealtiel Heritage'}
             </h3>
             <p className="text-sm text-muted-foreground">
               {(session.amountInCents / 100).toFixed(2).replace('.', ',')} €

@@ -8,7 +8,7 @@ import { ShieldCheck, FileCheck, Info } from "lucide-react"
 export const metadata: Metadata = {
   title: "Soutenir & Adhérer",
   description:
-    "Soutenez le Gibor Institute par un don libre ou une adhésion annuelle. Paiement sécurisé. Association loi 1901.",
+    "Soutenez Shealtiel Heritage par un don libre ou une adhésion annuelle. Paiement sécurisé. Association loi 1901.",
 }
 
 export default function SoutenirPage() {
@@ -48,13 +48,13 @@ export default function SoutenirPage() {
                 <Info className="w-6 h-6 text-primary flex-shrink-0" />
                 <div>
                   <p className="font-semibold text-foreground text-sm">Association loi 1901</p>
-                  <p className="text-muted-foreground text-sm">Gibor Institute, association à but non lucratif.</p>
+                  <p className="text-muted-foreground text-sm">Shealtiel Heritage, association à but non lucratif.</p>
                 </div>
               </div>
             </div>
 
             <p className="text-xs text-muted-foreground mt-8 text-center max-w-2xl mx-auto leading-relaxed">
-              Le Gibor Institute sollicite la reconnaissance d{"'"}intérêt général. La délivrance de reçus fiscaux
+              Shealtiel Heritage sollicite la reconnaissance d{"'"}intérêt général. La délivrance de reçus fiscaux
               ouvrant droit à réduction d{"'"}impôt sera confirmée dès l{"'"}obtention de ce statut.
             </p>
           </div>

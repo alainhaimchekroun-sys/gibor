@@ -7,7 +7,7 @@ import { INSTITUTE } from "@/lib/institute"
 export const metadata: Metadata = {
   title: "Mentions légales",
   description:
-    "Mentions légales du Gibor Institute, association loi 1901 : RNA, président, siège social et contact.",
+    "Mentions légales de Shealtiel Heritage, association loi 1901 : RNA, président, siège social et contact.",
 }
 
 export default function MentionsLegalesPage() {
@@ -63,7 +63,7 @@ export default function MentionsLegalesPage() {
               <h2 className="text-2xl font-bold text-foreground mb-4">Propriété intellectuelle</h2>
               <p className="text-foreground/80 leading-relaxed text-pretty">
                 L{"'"}ensemble des contenus présents sur ce site (textes, images, logos, podcasts) est protégé par le
-                droit d{"'"}auteur. Toute reproduction sans autorisation préalable du Gibor Institute est interdite.
+                droit d{"'"}auteur. Toute reproduction sans autorisation préalable de Shealtiel Heritage est interdite.
               </p>
             </div>
 

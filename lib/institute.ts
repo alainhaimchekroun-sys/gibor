@@ -1,14 +1,14 @@
-// Source of truth for Gibor Institute information.
+// Source of truth for Shealtiel Heritage information.
 // Placeholder values are marked with TODO — replace with official details.
 
 export const INSTITUTE = {
-  name: "Gibor Institute",
-  shortName: "Gibor Institute",
+  name: "Shealtiel Heritage",
+  shortName: "Shealtiel Heritage",
   // Statutory object — never describe this as "book promotion".
   mission:
     "Rechercher, préserver et éduquer le public sur les lignées historiques méconnues de la Méditerranée, en mettant l'accent sur des figures comme Dona Gracia Nasi, les réseaux séfarades et la transmission des mémoires juives et davidiques, par des expositions, podcasts, archives et ressources pédagogiques.",
   tagline: "La mémoire des lignées oubliées de la Méditerranée",
-  email: "contact@gibor-institute.org", // TODO: confirmer l'email officiel
+  email: "contact@shealtiel-heritage.org", // TODO: confirmer l'email officiel
   // Legal — association loi 1901
   legal: {
     type: "Association loi 1901",

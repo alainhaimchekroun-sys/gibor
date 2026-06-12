@@ -39,7 +39,7 @@ export function Navbar() {
           <Link href="/" className="flex items-center gap-3">
             <Image
               src="/images/logo-gibor.jpg"
-              alt="Gibor Institute"
+              alt="Shealtiel Heritage"
               width={48}
               height={48}
               className="rounded-full shadow-md ring-2 ring-primary/20"
@@ -50,7 +50,7 @@ export function Navbar() {
                 isScrolled ? "text-foreground" : "text-secondary-foreground",
               )}
             >
-              Gibor Institute
+              Shealtiel Heritage
             </span>
           </Link>
 

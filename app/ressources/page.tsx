@@ -8,7 +8,7 @@ import Link from "next/link"
 export const metadata: Metadata = {
   title: "Ressources",
   description:
-    "Ressources pédagogiques du Gibor Institute : guide enseignant, podcast éducatif et supports pour explorer les mémoires de la Méditerranée.",
+    "Ressources pédagogiques de Shealtiel Heritage : guide enseignant, podcast éducatif et supports pour explorer les mémoires de la Méditerranée.",
 }
 
 const RESOURCES = [
