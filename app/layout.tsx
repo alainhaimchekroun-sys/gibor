@@ -10,36 +10,34 @@ const _cormorant = Cormorant_Garamond({
   weight: ["300", "400", "500", "600", "700"]
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://gibor-livre.vercel.app'
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://gibor-institute.vercel.app'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'GIBOR - Les Héros du Temps | Roman Historique par Alain Henri Chekroun',
-    template: '%s | GIBOR - Les Héros du Temps'
+    default: 'Gibor Institute | Mémoire des lignées historiques de la Méditerranée',
+    template: '%s | Gibor Institute'
   },
-  description: 'Plongez dans GIBOR, une saga épique traversant 2500 ans d\'histoire, de Babylone à l\'Empire ottoman. Découvrez le destin extraordinaire de Dona Gracia Nassi et des héros oubliés de la lignée davidique. Roman historique disponible sur Amazon.',
+  description: 'Le Gibor Institute, association loi 1901, recherche, préserve et transmet la mémoire des lignées historiques méconnues de la Méditerranée : Dona Gracia Nasi, les réseaux séfarades et les mémoires juives et davidiques, par des expositions, podcasts, archives et ressources pédagogiques.',
   keywords: [
-    'GIBOR',
-    'Les Héros du Temps',
-    'Alain Henri Chekroun',
-    'roman historique',
-    'Dona Gracia Nassi',
-    'histoire juive',
-    'Empire ottoman',
-    'Babylone',
-    'saga épique',
-    'livre histoire',
-    'roman français',
+    'Gibor Institute',
+    'Dona Gracia Nasi',
+    'histoire séfarade',
+    'mémoire juive',
     'lignée davidique',
+    'association loi 1901',
+    'podcast histoire',
+    'ressources pédagogiques',
+    'Méditerranée',
     'Sépharades',
-    'Inquisition'
+    'archives historiques',
+    'transmission mémoire'
   ],
-  authors: [{ name: 'Alain Henri Chekroun', url: siteUrl }],
-  creator: 'Alain Henri Chekroun',
-  publisher: 'Alain Henri Chekroun',
+  authors: [{ name: 'Gibor Institute', url: siteUrl }],
+  creator: 'Gibor Institute',
+  publisher: 'Gibor Institute',
   generator: 'v0.app',
-  applicationName: 'GIBOR - Les Héros du Temps',
+  applicationName: 'Gibor Institute',
   referrer: 'origin-when-cross-origin',
   formatDetection: {
     email: false,
@@ -47,34 +45,27 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    type: 'book',
+    type: 'website',
     locale: 'fr_FR',
     url: siteUrl,
-    siteName: 'GIBOR - Les Héros du Temps',
-    title: 'GIBOR - Les Héros du Temps | Une Saga Épique par Alain Henri Chekroun',
-    description: 'Une fresque historique monumentale traversant 2500 ans d\'histoire. De Babylone à l\'Empire ottoman, suivez le destin des héros oubliés de la lignée davidique et l\'extraordinaire Dona Gracia Nassi.',
+    siteName: 'Gibor Institute',
+    title: 'Gibor Institute | Mémoire des lignées historiques de la Méditerranée',
+    description: 'Rechercher, préserver et transmettre la mémoire des lignées historiques méconnues de la Méditerranée, autour de Dona Gracia Nasi et des réseaux séfarades.',
     images: [
       {
-        url: '/images/gibor-cover-official.jpg',
+        url: '/images/lion-water.jpg',
         width: 1200,
         height: 630,
-        alt: 'GIBOR - Les Héros du Temps - Couverture du livre par Alain Henri Chekroun',
+        alt: 'Gibor Institute - Lion doré, symbole de la lignée davidique',
         type: 'image/jpeg',
       },
-      {
-        url: '/images/lion-water.jpg',
-        width: 800,
-        height: 600,
-        alt: 'GIBOR - Lion doré symbolisant la lignée davidique',
-      }
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'GIBOR - Les Héros du Temps | Roman Historique',
-    description: 'Une saga épique traversant 2500 ans d\'histoire, de Babylone à l\'Empire ottoman. Découvrez le destin de Dona Gracia et des héros oubliés.',
-    images: ['/images/gibor-cover-official.jpg'],
-    creator: '@AlainChekroun',
+    title: 'Gibor Institute | Mémoire des lignées de la Méditerranée',
+    description: 'Association loi 1901 dédiée à la recherche, la préservation et la transmission des mémoires séfarades et davidiques.',
+    images: ['/images/lion-water.jpg'],
   },
   robots: {
     index: true,
@@ -95,7 +86,7 @@ export const metadata: Metadata = {
       'fr-FR': siteUrl,
     },
   },
-  category: 'literature',
+  category: 'education',
   icons: {
     icon: [
       {
@@ -130,88 +121,35 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
     {
-      '@type': 'Book',
-      '@id': `${siteUrl}/#book`,
-      name: 'GIBOR - Les Héros du Temps',
-      author: {
-        '@type': 'Person',
-        '@id': `${siteUrl}/#author`,
-        name: 'Alain Henri Chekroun',
-      },
-      description: 'Une saga épique traversant 2500 ans d\'histoire, de Babylone à l\'Empire ottoman. Découvrez le destin extraordinaire de Dona Gracia Nassi et des héros oubliés de la lignée davidique.',
-      genre: ['Roman historique', 'Fiction historique', 'Saga familiale'],
-      inLanguage: 'fr',
-      bookFormat: 'https://schema.org/Paperback',
-      image: `${siteUrl}/images/gibor-cover-official.jpg`,
+      '@type': 'NGO',
+      '@id': `${siteUrl}/#organization`,
+      name: 'Gibor Institute',
       url: siteUrl,
-      workExample: [
-        {
-          '@type': 'Book',
-          bookFormat: 'https://schema.org/Paperback',
-          name: 'GIBOR - Les Héros du Temps (Broché)',
-        },
-        {
-          '@type': 'Book',
-          bookFormat: 'https://schema.org/AudioBook',
-          name: 'GIBOR - Les Héros du Temps (Audio)',
-        }
-      ]
-    },
-    {
-      '@type': 'Person',
-      '@id': `${siteUrl}/#author`,
-      name: 'Alain Henri Chekroun',
-      url: siteUrl,
-      description: 'Auteur de GIBOR - Les Héros du Temps, une saga épique traversant les siècles.',
-      image: `${siteUrl}/images/author.jpg`,
+      description: 'Association loi 1901 dédiée à la recherche, la préservation et la transmission des mémoires des lignées historiques méconnues de la Méditerranée, autour de Dona Gracia Nasi et des réseaux séfarades.',
+      logo: `${siteUrl}/images/logo-gibor.jpg`,
+      foundingDate: String(new Date().getFullYear()),
+      knowsAbout: ['Histoire séfarade', 'Dona Gracia Nasi', 'Mémoire juive', 'Lignée davidique', 'Méditerranée'],
     },
     {
       '@type': 'WebSite',
       '@id': `${siteUrl}/#website`,
       url: siteUrl,
-      name: 'GIBOR - Les Héros du Temps',
-      description: 'Site officiel du roman GIBOR - Les Héros du Temps par Alain Henri Chekroun',
+      name: 'Gibor Institute',
+      description: 'Site officiel du Gibor Institute',
       publisher: {
-        '@id': `${siteUrl}/#author`
+        '@id': `${siteUrl}/#organization`
       },
       inLanguage: 'fr-FR',
     },
     {
-      '@type': 'WebPage',
-      '@id': `${siteUrl}/#webpage`,
-      url: siteUrl,
-      name: 'GIBOR - Les Héros du Temps | Roman Historique par Alain Henri Chekroun',
-      isPartOf: {
-        '@id': `${siteUrl}/#website`
+      '@type': 'PodcastSeries',
+      '@id': `${siteUrl}/#podcast`,
+      name: 'Gibor, le podcast',
+      description: "La voix éducative officielle du Gibor Institute.",
+      url: `${siteUrl}/podcast`,
+      author: {
+        '@id': `${siteUrl}/#organization`
       },
-      about: {
-        '@id': `${siteUrl}/#book`
-      },
-      description: 'Découvrez GIBOR, une fresque historique monumentale traversant 2500 ans d\'histoire.',
-      inLanguage: 'fr-FR',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        {
-          '@type': 'ListItem',
-          position: 1,
-          name: 'Accueil',
-          item: siteUrl,
-        },
-        {
-          '@type': 'ListItem',
-          position: 2,
-          name: 'Le Livre',
-          item: `${siteUrl}/#livre`,
-        },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Commander',
-          item: `${siteUrl}/#commander`,
-        },
-      ],
     },
   ],
 }
