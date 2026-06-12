@@ -13,17 +13,17 @@ export const INSTITUTE = {
   legal: {
     type: "Association loi 1901",
     rna: "W—————", // TODO: numéro RNA officiel
-    president: "À renseigner", // TODO: nom du président
-    address: "À renseigner", // TODO: adresse du siège social
+    president: "Alain Chekroun",
+    address: "5 Rue du Coq Français, 93260 Les Lilas",
     foundedYear: new Date().getFullYear(),
   },
 }
 
-// Bureau & conseil — placeholder roles. TODO: replace names.
+// Bureau & conseil
 export const BUREAU = [
-  { role: "Président·e", name: "À renseigner" },
-  { role: "Trésorier·ère", name: "À renseigner" },
-  { role: "Secrétaire général·e", name: "À renseigner" },
+  { role: "Président", name: "Alain Chekroun" },
+  { role: "Trésorier·ère", name: "À renseigner" }, // TODO: nom du trésorier
+  { role: "Secrétaire général·e", name: "À renseigner" }, // TODO: nom du secrétaire
 ]
 
 export const CONSEIL = [
@@ -80,12 +80,15 @@ export const MEMBERSHIP_TIERS: MembershipTier[] = [
 // Suggested one-off donation amounts (in cents)
 export const DONATION_PRESETS = [1000, 2500, 5000, 10000]
 
-// 8 existing podcast episodes — placeholders. TODO: add real titles + links.
+// Podcast "Gibor, le podcast" — chaîne YouTube officielle.
+export const PODCAST_YOUTUBE = "https://www.youtube.com/results?search_query=Gibor+le+podcast" // TODO: remplacer par l'URL exacte de la chaîne
+
+// 8 existing podcast episodes — titres provisoires. TODO: confirmer titres + liens exacts des vidéos.
 export interface Episode {
   number: number
   title: string
   description: string
-  url: string // TODO: lien YouTube/Spotify
+  url: string // TODO: lien YouTube exact de l'épisode
 }
 
 export const EPISODES: Episode[] = [
@@ -93,48 +96,48 @@ export const EPISODES: Episode[] = [
     number: 1,
     title: "Dona Gracia Nasi, la femme qui défia l'Inquisition",
     description: "Portrait de l'héroïne séfarade, banquière des princes et sauveuse de son peuple.",
-    url: "#",
+    url: PODCAST_YOUTUBE,
   },
   {
     number: 2,
     title: "Les réseaux séfarades de la Méditerranée",
     description: "Comment les routes marchandes ont sauvé des milliers de vies au XVIe siècle.",
-    url: "#",
+    url: PODCAST_YOUTUBE,
   },
   {
     number: 3,
     title: "La lignée de David à travers les siècles",
     description: "Sur les traces des gardiens secrets d'un héritage millénaire.",
-    url: "#",
+    url: PODCAST_YOUTUBE,
   },
   {
     number: 4,
     title: "Babylone, premier exil et première mémoire",
     description: "Aux origines de la transmission des mémoires juives.",
-    url: "#",
+    url: PODCAST_YOUTUBE,
   },
   {
     number: 5,
     title: "Cordoue, l'âge d'or andalou",
     description: "Médecins, savants et poètes au cœur d'un carrefour de civilisations.",
-    url: "#",
+    url: PODCAST_YOUTUBE,
   },
   {
     number: 6,
     title: "Constantinople, refuge des exilés",
     description: "L'Empire ottoman comme terre d'accueil des persécutés.",
-    url: "#",
+    url: PODCAST_YOUTUBE,
   },
   {
     number: 7,
     title: "Femmes de pouvoir dans l'ombre de l'Histoire",
     description: "Le rôle invisible mais décisif des femmes dans la survie des communautés.",
-    url: "#",
+    url: PODCAST_YOUTUBE,
   },
   {
     number: 8,
     title: "Transmettre la mémoire aujourd'hui",
     description: "Pourquoi et comment éduquer les nouvelles générations.",
-    url: "#",
+    url: PODCAST_YOUTUBE,
   },
 ]

@@ -2,8 +2,8 @@ import type { Metadata } from "next"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { PageHeader } from "@/components/institute/page-header"
-import { Play, Headphones, Instagram, Facebook } from "lucide-react"
-import { EPISODES } from "@/lib/institute"
+import { Play, Headphones, Instagram, Facebook, Youtube } from "lucide-react"
+import { EPISODES, PODCAST_YOUTUBE } from "@/lib/institute"
 
 export const metadata: Metadata = {
   title: "Podcast",
@@ -66,7 +66,16 @@ export default function PodcastPage() {
             <p className="text-muted-foreground mb-8 leading-relaxed">
               Retrouvez tous les épisodes et nos actualités sur nos réseaux sociaux.
             </p>
-            <div className="flex justify-center gap-4">
+            <div className="flex flex-wrap justify-center gap-4">
+              <a
+                href={PODCAST_YOUTUBE}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-card border border-border hover:border-primary px-6 py-3 rounded-md font-medium text-foreground transition-colors"
+              >
+                <Youtube className="w-5 h-5 text-primary" />
+                YouTube
+              </a>
               <a
                 href="https://www.instagram.com/giborlepodcast/"
                 target="_blank"
