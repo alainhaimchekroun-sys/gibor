@@ -66,6 +66,12 @@ export function Navbar() {
             )}>
               L{"'"}auteur
             </a>
+            <a href="#prochain-opus" className={cn(
+              "text-sm tracking-wide hover:text-primary transition-colors",
+              isScrolled ? "text-foreground/80" : "text-secondary-foreground/80"
+            )}>
+              Le prochain Opus
+            </a>
             <a 
               href="/acheter"
               className="inline-flex items-center justify-center bg-primary text-primary-foreground hover:bg-primary/90 tracking-wide px-4 py-2 text-sm font-medium rounded-md transition-colors"
@@ -117,6 +123,13 @@ export function Navbar() {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               L{"'"}auteur
+            </a>
+            <a 
+              href="#prochain-opus" 
+              className="block text-foreground/80 hover:text-primary transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Le prochain Opus
             </a>
             <a 
               href="/acheter"
